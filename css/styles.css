@@ -460,6 +460,128 @@ img {
   padding: 8px;
 }
 
+.footer-container3 {
+  display: block;
+  width: 453px;
+  height: 80px;
+  padding-left: 80px;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-label {
+}
+.footer-input {
+  border: 1px solid var(--background);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  min-width: 264px;
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--hero-title-buttons);
+  padding: 8px 16px;
+  background-color: var(--brand-color);
+}
+.footer-button {
+  background-color: var(--accent-logo-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--background);
+  border: 0px solid transparent;
+  min-width: 165px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  transition: background-color var(--timing-cubic);
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--hover-color);
+}
+.footer-bottom-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background);
+  margin-bottom: 16px;
+}
+.container3 {
+  margin-left: 80px;
+}
+.subscibe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: var(--background);
+}
+
+.form-div {
+  display: flex;
+}
+
+.form-footer input {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 0 16px 0 16px;
+  height: 40px;
+  width: 264px;
+  background-color: transparent;
+  outline: 0;
+  transition: border-color var(--timing-cubic);
+}
+.btn-footer {
+  display: flex;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  margin-left: 24px;
+  background: var(--accent-color);
+  transition: background-color var(--timing-cubic);
+}
+.btn-submit {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--background);
+  margin-right: 16px;
+  padding: 0;
+  border: none;
+}
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+}
+.btn-footer:hover {
+  background-color: var(--hover-color);
+}
+
+.btn-footer:focus {
+  background-color: var(--hover-color);
+}
+
 .services-list {
   flex-wrap: wrap;
   gap: 48px 24px;
@@ -545,12 +667,15 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 408px;
-  height: 576px;
-  background-color: #FCFCFC;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  min-height: 584px;
+  padding: 72px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  background-color: var(--background);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--action);
 }
 
 .modal-btn {
@@ -583,4 +708,152 @@ img {
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:hover .modal-btn-icon {
   fill: var(--background);
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.modal-input-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+.input-wrap {
+  position: relative;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--brand-color);
+  transition: border-color var(--timing-cubic);
+  outline: transparent;
+}
+
+.modal-label-text {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #8e8f99;
+}
+
+.modal-field {
+  margin-bottom: 8px;
+}
+
+.modal-input:focus {
+  border-color: var(--hover-color);
+}
+.modal-input:focus + .modal-input-icon {
+  fill: var(--hover-color);
+}
+
+.modal-texarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: transparent;
+  background-color: transparent;
+  resize: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal-texarea:focus {
+  border-color: var(--hover-color);
+}
+.modal-btn-send {
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--background);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--timing-cubic);
+  cursor: pointer;
+}
+
+.modal-btn-send:hover,
+.modal-btm-send:focus {
+  background-color: var(--hover-color);
+}
+.check-text::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+  display: block;
+}
+
+.check-text {
+  display: flex;
+  gap: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.modal-check:checked + .check-text::before {
+  background-color: var(--hover-color);
+  border: none;
+
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.a-text {
+  text-decoration: underline;
+}
+
+.placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
