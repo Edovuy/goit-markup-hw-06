@@ -811,21 +811,17 @@ img {
   height: 16px;
   border: 1px solid #2e2f42;
   border-radius: 2px;
-  display: block;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .check-text {
-  display: flex;
-  gap: 8px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-top: 16px;
   margin-bottom: 24px;
-  align-items: center;
 }
 
 .modal-check:checked + .check-text::before {
